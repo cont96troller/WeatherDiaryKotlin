@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_weather_current"
-        android:name="com.example.weatherdiarykotlin.ui.CureentWeatherFragmnet"
+        android:name="com.example.weatherdiarykotlin.ui.CurrentWeatherFragment"
         android:label="현재날씨"
         tools:layout="@layout/fragment_weather_current" />
 
