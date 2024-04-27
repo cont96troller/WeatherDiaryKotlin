@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_list_weather" />
 
     <fragment
-        android:id="@+id/navigation_weather"
-        android:name="com.example.weatherdiarykotlin.ui.WeatherFragment"
+        android:id="@+id/navigation_weather_current"
+        android:name="com.example.weatherdiarykotlin.ui.CureentWeatherFragmnet"
         android:label="현재날씨"
-        tools:layout="@layout/fragment_weather" />
+        tools:layout="@layout/fragment_weather_current" />
 
     <fragment
         android:id="@+id/navigation_list_diary"

@@ -5,17 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.weatherdiarykotlin.databinding.FragmentWeatherBinding
+import com.example.weatherdiarykotlin.databinding.FragmentWeatherCurrentBinding
 
-class WeatherFragment : Fragment() {
-    private lateinit var binding:FragmentWeatherBinding
+class CureentWeatherFragmnet : Fragment() {
+    private lateinit var binding:FragmentWeatherCurrentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentWeatherBinding.inflate(inflater)
+        binding = FragmentWeatherCurrentBinding.inflate(inflater)
         return binding.root
     }
 }
