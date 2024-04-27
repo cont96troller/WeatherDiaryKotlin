@@ -1,19 +1,14 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
 android {
-    namespace = "com.example.weatherdiarykotlin"
+    namespace = "com.example.data"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.weatherdiarykotlin"
         minSdk = 34
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -33,10 +28,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -44,12 +35,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     implementation(project(":domain"))
-    implementation(project(":data"))
-
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
