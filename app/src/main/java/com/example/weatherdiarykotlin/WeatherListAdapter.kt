@@ -1,8 +1,10 @@
 package com.example.weatherdiarykotlin
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.domain.model.ListWeather
 import com.example.weatherdiarykotlin.databinding.ItemWeatherListBinding
 
@@ -15,6 +17,11 @@ class WeatherListAdapter : RecyclerView.Adapter<WeatherListAdapter.ViewHolder>()
         fun bind(listWeather: ListWeather) {
             binding.txtWeatherMain.text = listWeather.description
             binding.txtWeatherDescription.text = listWeather.main
+            Glide.with(itemView)
+                .load("https://openweathermap.org/" + "img/" + "/w/" + listWeather.icon + ".png")
+                .into(binding.imgWeatherIcon)
+
+            Log.e("openweathermap : : ", "https://openweathermap.org/" + "img/" + "/w/" + listWeather.icon + ".png")
         }
     }
 
