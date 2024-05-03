@@ -19,7 +19,7 @@ interface OpenWeatherMapApi {
         @Query("apiKey") apiKey: String
     ): CurrentWeatherResponse
 
-    @GET("data/2.5/forecast/daily")
+    @GET("data/2.5/forecast")
     suspend fun getListWeather(
         @Query("lat") lat: Double,
         @Query("lon") lon: Double,

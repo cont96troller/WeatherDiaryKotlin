@@ -13,7 +13,7 @@ class GetWeatherListUseCase @Inject constructor(
             parameters.lat,
             parameters.lon,
             parameters.cnt,
-            "api key"
+            parameters.apikey
         )
     }
 }

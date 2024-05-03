@@ -13,7 +13,8 @@ class WeatherListAdapter : RecyclerView.Adapter<WeatherListAdapter.ViewHolder>()
     class ViewHolder(private val binding: ItemWeatherListBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(listWeather: ListWeather) {
-            binding.txtWeatherStatus.text = listWeather.description
+            binding.txtWeatherMain.text = listWeather.description
+            binding.txtWeatherDescription.text = listWeather.main
         }
     }
 
