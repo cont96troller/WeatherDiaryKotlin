@@ -1,6 +1,6 @@
 package com.example.weatherdiarykotlin.di
 
-import com.example.data.api.OpenWeatherMapApi
+import com.example.data.remote.api.OpenWeatherMapApi
 import com.example.data.repository.OpenWeatherMapRepositoryImpl
 import com.example.domain.repository.OpenWeatherMapRepository
 import dagger.Module

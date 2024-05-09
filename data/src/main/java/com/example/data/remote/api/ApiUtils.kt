@@ -1,4 +1,4 @@
-package com.example.data.api
+package com.example.data.remote.api
 
 import android.content.Context
 import com.example.data.BuildConfig

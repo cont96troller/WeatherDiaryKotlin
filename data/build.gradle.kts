@@ -82,7 +82,6 @@ dependencies {
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 
-
 }
 
 fun loadProperties(file: File?) = Properties().apply {

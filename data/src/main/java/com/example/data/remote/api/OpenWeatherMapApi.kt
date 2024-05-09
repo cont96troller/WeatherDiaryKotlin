@@ -1,4 +1,4 @@
-package com.example.data.api
+package com.example.data.remote.api
 
 import com.example.data.model.CurrentWeatherResponse
 import com.example.data.model.ListWeatherResponse
