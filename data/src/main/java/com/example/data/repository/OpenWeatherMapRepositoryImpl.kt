@@ -3,7 +3,7 @@ package com.example.data.repository
 import android.util.Log
 import androidx.core.content.contentValuesOf
 import com.example.data.BuildConfig
-import com.example.data.api.OpenWeatherMapApi
+import com.example.data.remote.api.OpenWeatherMapApi
 import com.example.data.model.CurrentWeatherResponse
 import com.example.data.model.Forecast
 import com.example.data.model.ListWeatherResponse

@@ -72,10 +72,16 @@ dependencies {
     // gson
     implementation(libs.gson)
 
-    //test
+    // test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // room
+    implementation(libs.androidx.room.runtime)
+    annotationProcessor(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
 }
 
 fun loadProperties(file: File?) = Properties().apply {
